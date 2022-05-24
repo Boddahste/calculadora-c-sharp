@@ -1,0 +1,67 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace ex3
+{
+    class Program
+
+    {
+        static void Main(string[] args)
+        {
+            int op, cal, num1, num2,resul,vol;
+            Console.WriteLine("Escolha a opcao para a operacao");
+            Console.WriteLine("1-multipplicacao(*)");
+            Console.WriteLine("2-adicao(+)");
+            Console.WriteLine("3-divisao(/)");
+            Console.WriteLine("4-subtracao(-)");
+            
+
+
+            op = Convert.ToInt32(Console.ReadLine());
+
+
+            Console.WriteLine("escolhaum numero");
+            num1= Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("escolhaum numero");
+            num2 = Convert.ToInt32(Console.ReadLine());
+
+       
+
+            switch (op)
+            {
+                case 1:
+                    resul=(num1* num2);
+                    Console.WriteLine("o resultado e"+resul);
+                    break;
+
+                case 2:
+                    resul = (num1 + num2);
+                    Console.WriteLine("o resultado e" + resul);
+                    break;
+
+                case 3:
+                    resul = (num1 / num2);
+                    Console.WriteLine("o resultado e" + resul);
+                    break;
+
+                case 4:
+                    resul = (num1 - num2);
+                    Console.WriteLine("o resultado e" + resul);
+                    break;
+
+             
+
+
+                default:
+
+                    Console.WriteLine("?");
+                    break;
+
+                    Console.ReadKey();
+                  
+            }
+        }
+    }
+}
